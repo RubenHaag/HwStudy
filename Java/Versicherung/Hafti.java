@@ -2,7 +2,7 @@ class Hafti extends Policen {
 	int alter;
 	int schadensdeckung;
 	int jährlicheErhöhung;
-	int risiko
+	int risiko;
 	Hafti(String name, String vorname, double minBeitrag, int alter, int schadensdeckung, int risiko){
 		this.name =name;
 		this.vorname =vorname;
@@ -20,17 +20,20 @@ class Hafti extends Policen {
 			case 2: multi=1.2; break;
 			case 1: multi=1; break;
 		}
-		return ("Die Rechnung von iher Lebensversicherung ist Da.\nSie müssen "+minBeitrag+"€ zahlen.\nDer zu zahlende beitrag ensteht durch ihren Mindesbeiteig ( "+minBeitrag+"€ ), der mit ihrer Risikostufe multipliziert wird");
+		return ("Die Rechnung von iher Lebensversicherung ist Da.\nSie müssen "+minBeitrag+"€ zahlen.\nDer zu zahlende beitrag ensteht durch ihren Mindesbeiteig ( "+minBeitrag+"€ ), der mit ihrer Risikostufe multipliziert wird\n");
 	}
 	public String auszahlen(){
-		return(" geht nicht")
+		return(" geht nicht");
+	}
+	public String auszahlen(String beschreibung){
+		return(" geht nicht");
 	}
 	public String auszahlen(String beschreibung, int schaden){
 		if(schaden < schadensdeckung){
-			return ("Da sie" +name+ "bei Folgendem Unglück \n" + beschreibung + "\n Den folgenden Schaden verusacht haben:\n " + schaden +"\n bekommen sie diesen abzüglich einer Selbstbeteiligung von:\n" + risiko * 100 +"erstattet");
+			return ("Da sie " +name+ " bei Folgendem Unglück ”" + beschreibung + "” Den folgenden Schaden verusacht haben: " + schaden +"\n bekommen sie diesen abzüglich einer Selbstbeteiligung von:" + risiko * 100 +"erstattet\n");
 		}
 		else{
-			return ("Da sie" +name+ "bei Folgendem Unglück \n" + beschreibung + "\n Den folgenden Schaden verusacht haben:\n " + schaden +"\n , und dieser Schaden ihre maximale Schadensdeckung von " +schadensdeckung+"€ übersteigt\nbekommen sie jene abzüglich einer Selbstbeteiligung von:\n" + risiko * 100 +"erstattet");
+						return ("Da sie" +name+ "bei Folgendem Unglück ”" + beschreibung + "”Den folgenden Schaden verusacht haben: " + schaden +" , und dieser Schaden ihre maximale Schadensdeckung von " +schadensdeckung+"€ übersteigt bekommen sie jene abzüglich einer Selbstbeteiligung von: " + risiko * 100 +"erstattet\n");
 		}
 	}
 }

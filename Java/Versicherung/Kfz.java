@@ -1,6 +1,6 @@
 class Kfz extends Policen {
 
-	Kfz(String name, String vorname, double minBeitrag, int plaktte){
+	Kfz(String vorname, String name, double minBeitrag, int plaktte){
 		this.name =name;
 		this.vorname =vorname;
 		this.minBeitrag =minBeitrag;
@@ -16,13 +16,18 @@ class Kfz extends Policen {
 			case 2: multi=1.4; break;
 			case 3: multi=1.2; break;
 			case 4: multi=1; break;
+			default: multi = 7; break; // keine bedrüger!!!
+				
 		}
-		return (" Die Rechnung von iher Kfzversicherrung ist Da.\nSie müssen "+minBeitrag*multi+"€ zahlen.\nDer zu zahlende beitraäg enseht durch ihren Mindesbeiteig ( "+minBeitrag+"€ ) und die Multipikatoin mit dem Facktor( "+multi+"€ ) durch ihre Umweltbacktte. ( "+plaktte+" )");
+		return ("Hallo "+vorname+" "+name+",\nDie Rechnung von ihrer Kfz-Versicherrung ist da.\nSie müssen "+minBeitrag*multi+"€ zahlen.\nDer zu zahlende Beitrag entsteht durch ihren Mindestbeitrag ( "+minBeitrag+"€ ) und die Multipikatoin mit dem Faktor( "+multi+" ) aufgrund Ihrer Umweltplakette. ( "+plaktte+" ).\n");
 	}
-	public void auszahlen(String beschribung, int schaden){
-		System.out.print("Der Schaden, in höhe von "+schaden+"€ wurde entfernt.");
+	public String auszahlen(String beschribung, int schaden){
+		return("Der Schaden, "+ beschribung+" in Höhe von "+schaden+"€ wurde repariert.\n");
 	}
-	public void auszahlen(){
-		System.out.print("so nicht! Bitte Angaben geben.");
+	public String auszahlen(){
+		return(" geht nicht");
+	}
+	public String auszahlen(String beschreibung){
+		return(" geht nicht");
 	}
 }

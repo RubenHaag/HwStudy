@@ -2,9 +2,7 @@ class Leben extends Policen {
 	int alter;
 	int schadensdeckung;
 	int jährlicheErhöhung;
-	int risiko
-	double multi;
-
+	int risiko;
 	Leben(String name, String vorname, double minBeitrag, int alter, int schadensdeckung, int risiko){
 		this.name =name;
 		this.vorname =vorname;
@@ -13,6 +11,7 @@ class Leben extends Policen {
 	}
 
 	
+	double multi;
 
 	public String rechnungStellen(){
 		switch(risiko){
@@ -21,12 +20,15 @@ class Leben extends Policen {
 			case 2: multi=1.2; break;
 			case 1: multi=1; break;
 		}
-		return ("Die Rechnung von iher Lebensversicherung ist Da.\nSie müssen "+minBeitrag+"€ zahlen.\nDer zu zahlende beitrag ensteht durch ihren Mindesbeiteig ( "+minBeitrag+"€ ), der mit ihrer Risikostufe multipliziert wird");
+		return ("Die Rechnung von iher Lebensversicherung ist Da.\nSie müssen "+minBeitrag+"€ zahlen.\nDer zu zahlende beitrag ensteht durch ihren Mindesbeiteig ( "+minBeitrag+"€ ), der mit ihrer Risikostufe multipliziert wird\n");
+	}
+	public String auszahlen(String beschribung, int schaden){
+		return(" geht nicht");
 	}
 	public String auszahlen(){
-		return(" geht nicht")
+		return(" geht nicht");
 	}
 	public String auszahlen(String beschreibung){
-		return ("Da ihr Verwandter" +name+ "bei Folgendem Unfall verunglück ist \n" + beschreibung + "\n erhalten sie einen Schadensersatz von " + schadensdeckung);
+		return ("Da ihr Verwandter " +name+ " bei Folgendem Unfall verunglück ist ”" + beschreibung + "” erhalten sie einen Schadensersatz von " + schadensdeckung+"€\n");
 	}
 }

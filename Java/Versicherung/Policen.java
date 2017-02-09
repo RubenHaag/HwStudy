@@ -6,5 +6,6 @@ public abstract class Policen {
 	public abstract String rechnungStellen();
 	public abstract String auszahlen();
 	public abstract String auszahlen(String beschribung, int schaden);
+	public abstract String auszahlen(String beschribung);
 	
 }
