@@ -19,7 +19,10 @@ class Kfz extends Policen {
 		}
 		return (" Die Rechnung von iher Kfzversicherrung ist Da.\nSie müssen "+minBeitrag*multi+"€ zahlen.\nDer zu zahlende beitraäg enseht durch ihren Mindesbeiteig ( "+minBeitrag+"€ ) und die Multipikatoin mit dem Facktor( "+multi+"€ ) durch ihre Umweltbacktte. ( "+plaktte+" )");
 	}
-	public double auszahlen(String beschribung, int schaden){
+	public void auszahlen(String beschribung, int schaden){
 		System.out.print("Der Schaden, in höhe von "+schaden+"€ wurde entfernt.");
+	}
+	public void auszahlen(){
+		System.out.print("so nicht! Bitte Angaben geben.");
 	}
 }
