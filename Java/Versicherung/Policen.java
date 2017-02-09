@@ -4,7 +4,7 @@ public abstract class Policen {
 	double minBeitrag;
 
 	public abstract String rechnungStellen();
-	public abstract void auszahlen();
-	public abstract void auszahlen(String beschribung, int schaden);
+	public abstract String auszahlen();
+	public abstract String auszahlen(String beschribung, int schaden);
 	
 }
