@@ -24,7 +24,11 @@ public class Icafe extends JApplet{
     
     Color cor = new Color(255, 0, 0);
     
+<<<<<<< HEAD
     JButton kaffeeBut = new JButton("Kaffe");
+=======
+    JButton kaffeeBut = new JButton("Kaffee");
+>>>>>>> master
     Label kaffeeLabel = new Label(""+kaffeeZähler+" Tasse\n Kaffe kosten "+kaffee+"€");
     ActionListener kaffeeListener = new ActionListener(){
         public void actionPerformed(ActionEvent e){
@@ -45,7 +49,11 @@ public class Icafe extends JApplet{
     };
 
     JButton spriteBut = new JButton("sprite");
+<<<<<<< HEAD
     Label spriteLabel = new Label(    ActionListerner act = new ActionListener(){""+spriteZähler+" Gläser sprit kosten "+sprite+"€");
+=======
+    Label spriteLabel = new Label(""+spriteZähler+" Gläser sprit kosten "+sprite+"€");
+>>>>>>> master
     ActionListener spriteListener = new ActionListener(){
         public void actionPerformed(ActionEvent e){
             spriteZähler++;

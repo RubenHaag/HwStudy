@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #BlueJ class context
 comment0.params=e
 comment0.target=void\ actionPerformed(java.awt.event.ActionEvent)
@@ -8,3 +9,15 @@ comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
 comment3.params=
 comment3.target=void\ init()
 numComments=4
+=======
+#BlueJ class context
+comment0.params=e
+comment0.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment1.params=e
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=e
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=
+comment3.target=void\ init()
+numComments=4
+>>>>>>> master
