@@ -30,7 +30,7 @@ class Hafti extends Policen {
 			return ("Da sie" +name+ "bei Folgendem Unglück \n" + beschreibung + "\n Den folgenden Schaden verusacht haben:\n " + schaden +"\n bekommen sie diesen abzüglich einer Selbstbeteiligung von:\n" + risiko * 100 +"erstattet");
 		}
 		else{
-						return ("Da sie" +name+ "bei Folgendem Unglück \n" + beschreibung + "\n Den folgenden Schaden verusacht haben:\n " + schaden +"\n , und dieser Schaden ihre maximale Schadensdeckung von " +schadensdeckung+"€ übersteigt bekommen sie jene abzüglich einer Selbstbeteiligung von:\n" + risiko * 100 +"erstattet");
+			return ("Da sie" +name+ "bei Folgendem Unglück \n" + beschreibung + "\n Den folgenden Schaden verusacht haben:\n " + schaden +"\n , und dieser Schaden ihre maximale Schadensdeckung von " +schadensdeckung+"€ übersteigt\nbekommen sie jene abzüglich einer Selbstbeteiligung von:\n" + risiko * 100 +"erstattet");
 		}
 	}
 }

@@ -3,6 +3,8 @@ class Leben extends Policen {
 	int schadensdeckung;
 	int jährlicheErhöhung;
 	int risiko
+	double multi;
+
 	Leben(String name, String vorname, double minBeitrag, int alter, int schadensdeckung, int risiko){
 		this.name =name;
 		this.vorname =vorname;
@@ -11,7 +13,6 @@ class Leben extends Policen {
 	}
 
 	
-	double multi;
 
 	public String rechnungStellen(){
 		switch(risiko){
