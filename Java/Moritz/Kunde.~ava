@@ -1,0 +1,23 @@
+class Kunde{
+  String name;
+  double betrag;
+  Kunde next;
+  
+  public void bezahln(){
+    gesamt=gesamt+betrag;
+  }
+  
+  
+  Kunde(String n, double b){
+  name= n;
+  betrag=b;
+  next = null;
+  }
+  
+  public Kunde nächsterGeben(){
+    return next;
+  }
+  public Kunde nächsterSetzen(Kunde k){
+    next=k;
+  }
+}

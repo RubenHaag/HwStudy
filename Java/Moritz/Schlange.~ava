@@ -1,0 +1,26 @@
+class Schlange extends Kette{
+  Kunde erster;
+  double gesamt;
+  
+  Schlange(){
+    double  gesamt=0;
+  }
+  
+  public void bezahln(Kunde k){
+    gesamt=gesamt+k.betrag;
+  }
+  
+  public void anstellen(Kunde k){
+   Kunde aktuell = k;
+   while (!aktuell.nächsterGeben()=null) {
+        aktuell=aktuell.nächsterGeben();
+    }
+    aktuell.nächsterSetzen(k);
+  }
+  public void abArbeiten(Kunde k){
+   Kunde alterster= erster;
+   bezahlen(alterster);
+   erster=erster.nächsterGeben();
+  }
+
+}

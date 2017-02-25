@@ -3,6 +3,7 @@ class Hafti extends Policen {
 	int schadensdeckung;
 	int jährlicheErhöhung;
 	int risiko;
+	String x;
 	Hafti(String name, String vorname, double minBeitrag, int alter, int schadensdeckung, int risiko){
 		this.name =name;
 		this.vorname =vorname;
@@ -30,10 +31,11 @@ class Hafti extends Policen {
 	}
 	public String auszahlen(String beschreibung, int schaden){
 		if(schaden < schadensdeckung){
-			return ("Da sie " +name+ " bei Folgendem Unglück ”" + beschreibung + "” Den folgenden Schaden verusacht haben: " + schaden +"\n bekommen sie diesen abzüglich einer Selbstbeteiligung von:" + risiko * 100 +"erstattet\n");
+			x = "Da sie " +name+ " bei Folgendem Unglück ”" + beschreibung + "” Den folgenden Schaden verusacht haben: " + schaden +"\n bekommen sie diesen abzüglich einer Selbstbeteiligung von:" + risiko * 100 +"erstattet\n";
 		}
 		else{
-						return ("Da sie" +name+ "bei Folgendem Unglück ”" + beschreibung + "”Den folgenden Schaden verusacht haben: " + schaden +" , und dieser Schaden ihre maximale Schadensdeckung von " +schadensdeckung+"€ übersteigt bekommen sie jene abzüglich einer Selbstbeteiligung von: " + risiko * 100 +"erstattet\n");
+			x = "Da sie" +name+ "bei Folgendem Unglück ”" + beschreibung + "”Den folgenden Schaden verusacht haben: " + schaden +" , und dieser Schaden ihre maximale Schadensdeckung von " +schadensdeckung+"€ übersteigt bekommen sie jene abzüglich einer Selbstbeteiligung von: " + risiko * 100 +"erstattet\n";
 		}
+		return(x);
 	}
 }
