@@ -38,6 +38,6 @@ toAvl :: numbaum num -> numbaum num
 toAvl Leer = Leer
 toAvl (Bin lt m rt) = toAvl (rturn (Bin lt m rt)), if bFak (Bin lt m rt) < -1 & bFak lt <= 0
 toAvl (Bin lt m rt) = toAvl (lturn (Bin lt m rt)), if bFak (Bin lt m rt) > 1 & bFak rt >= 0
-toAvl (Bin lt m rt) = toAvl (lturn (Bin (lturn lt) m rt)), if bFak (Bin lt m rt) < -1 & bFak lt > 0
-toAvl (Bin lt m rt) = toAvl (rturn (Bin lt m (rturn rt))), if bFak (Bin lt m rt) > 1 & bFak rt < 0
+toAvl (Bin lt m rt) = toAvl (rturn (Bin (lturn lt) m rt)), if bFak (Bin lt m rt) < -1 & bFak lt > 0
+toAvl (Bin lt m rt) = toAvl (lturn (Bin lt m (rturn rt))), if bFak (Bin lt m rt) > 1 & bFak rt < 0
 toAvl (Bin lt m rt) = (Bin (toAvl lt) m (toAvl rt)), if bFak (Bin lt m rt) <= 1 & bFak (Bin lt m rt) >= -1
