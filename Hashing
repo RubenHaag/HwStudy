@@ -1,0 +1,28 @@
+Hashing
+-Wenig SPeicherplatz, viele daten von denen nicht alle benötigt werden
+->gesamtgröße aller daten zu groß
+-Datenstrucktur mit schneller zugriffsgeschwindigkeit -> Arrays
+Problem:
+Arrays sind unflexibel
+-> Array wird groß genug angegeben
+-> unsortiert
+Sortiert:
+-jedes neue einfügen in den Array braucht eine neue Organisation von diesem
+-Aus name -> Adresse im Array = Hashfunktion
+-Falls selbe Adresse -> Kollision -> Hashverfahren findet neuen Platz
+-Auf neuem Platz wird gesucht.
+-Kann kollisionen geben
+Vorteil:
+-Schneller direktzugriff
+- Array muss deutlich gößer sein als die tatsächliche menge der Daten
+
+Unterscheidung offenes und geschlossenes Hashing
+Offenes: 
+  Nach Kollision wird liste danach gesucht
+  
+Geschlossenes:
+  Pro feld ein Element
+  -> sondierungsverfahren
+    -Lineares
+    -Quadratisches
+  
