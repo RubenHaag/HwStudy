@@ -1,0 +1,3 @@
+class Verbrecherhash extends {
+	
+}
