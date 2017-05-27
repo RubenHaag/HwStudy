@@ -12,7 +12,7 @@ class Verbrecherhash extends Hashing{
 
 	void einfügen(Verbrecher x){
 		int hcode = hashfunktion(x.getName()) % länge;
-		while (s [hcode] != null){
+		while (s[hcode] != null){
 				hcode*= 1.7 % länge;
 		}
 		s[hcode] = x;
