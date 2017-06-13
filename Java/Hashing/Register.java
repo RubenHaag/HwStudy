@@ -2,10 +2,10 @@
 public class Register extends Hashfunktionen {
 
 	public Register() {
-		liste= new Verkehrssuendiger[100];
+		liste= new Objekt[100];
 	}
 	public Register(int laenge) {
-		liste= new Verkehrssuendiger[laenge];
+		liste= new Objekt[laenge];
 	}
 	
 	public int getlänge() {
@@ -19,7 +19,7 @@ public class Register extends Hashfunktionen {
 		}
 		System.out.println("");
 		for(int i = 0; i < liste.length; i++){
-			if(liste[i] != null){
+			if(liste[i] != null&&liste[i].getName() != null){
 				System.out.println(liste[i].getName()+ "\t\t" + ((Verkehrssuendiger) liste[i]).getPunkte());
 			}
 		}
