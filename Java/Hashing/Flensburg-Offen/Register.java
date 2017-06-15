@@ -3,9 +3,15 @@ public class Register extends Hashfunktionen {
 
 	public Register() {
 		liste= new Stack[100];
+		for(int i = 0; i <liste.length; i++){
+			liste[i] = new Stack();
+		}
 	}
 	public Register(int laenge) {
 		liste= new Stack[laenge];
+		for(int i = 0; i <liste.length; i++){
+			liste[i] = new Stack();
+		}
 	}
 	
 	public int getlänge() {
@@ -19,8 +25,8 @@ public class Register extends Hashfunktionen {
 		}
 		System.out.println("");
 		for(int i = 0; i < liste.length; i++){
-			if(liste[i] != null){
-				System.out.println(liste[i].getName()+ "\t\t" + ((Verkehrssuendiger) liste[i]).getPunkte());
+			if (!(liste[i].ausgabe().equals(""))) {
+				System.out.println(liste[i].ausgabe());				
 			}
 		}
 		System.out.println("");

@@ -35,31 +35,41 @@ public class Verkehrssuendiger extends Objekt {
 	}
 
 	public Objekt suchen(String n){
-		if(n.isEqual(name)){
+		if(n.equals(name)){
 			return this;
 		}
 		else if(nächster != null){
 			return nächster.suchen(n);
 		}
-		else{return null};
+		else{return null;}
 	}
-	public void hintenAnfügen(Objekt e){
+	public void einfügen(Objekt e){
 		if(nächster == null){
-			this.nächster == e;
+			this.nächster = e;
 		}
 		else{
-			nächster.hintenAnfügen(e);
+			nächster.einfügen(e);
 		}
 	}
 	public String loeschen(String n){
-		if(nächster.getName().isEqual(n)){
+		if(nächster.getName().equals(n)){
 			nächster = nächster.nächster;
+			return null;
 		}
 		else if (nächster != null){
-			nächster.loeschen();
+			nächster.loeschen(n);
+			return null;
 		}
 		else {
 			return("Error dieser Name ist nicht vorhanden!");
 		}
-	}	
+	}
+	public String ausgabe(){
+		if(nächster != null){
+			return (name + "\t" + punkte + "\n"+ nächster.ausgabe());
+		}
+		else {
+			return (name + "\t" + punkte + "\n");
+		}
+	}
 }

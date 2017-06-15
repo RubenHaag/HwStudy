@@ -18,5 +18,4 @@ public class User {
 		r01.loeschen("Peter");
 		r01.ausgabe();
 	}
-
 }
