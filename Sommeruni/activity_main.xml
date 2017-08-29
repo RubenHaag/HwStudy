@@ -7,41 +7,165 @@
     tools:context="com.example.k0027968.bikelightapp.MainActivity">
 
 
-    <Button
-        android:id="@+id/Ok"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="129dp"
-        android:layout_y="291dp"
-        android:text="OK" />
+    <TextView
+        android:id="@+id/Ergebnis"
+        android:layout_width="214dp"
+        android:layout_height="113dp"
+        android:layout_x="70dp"
+        android:layout_y="380dp"
+        android:text="Ergebnis:" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_x="70dp"
-        android:layout_y="96dp"
+        android:layout_x="0dp"
+        android:layout_y="90dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textMultiLine|textNoSuggestions|textPersonName"
+        android:singleLine="false" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="67dp"
-        android:layout_y="183dp"
-        android:ems="10"
-        android:inputType="textPersonName|textWebPassword"
-        android:text="Name" />
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="20dp"
+        android:layout_y="150dp"
+        android:onClick="butEingabe"
+        android:text="1"
+        android:tag="1" />
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="90dp"
+        android:layout_y="150dp"
+        android:onClick="butEingabe"
+        android:text="2"
+        android:tag="2" />
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="162dp"
+        android:layout_y="150dp"
+        android:onClick="butEingabe"
+        android:text="3"
+        android:tag="3" />
 
-    <TextView
-        android:id="@+id/Ergebnis"
-        android:layout_width="122dp"
-        android:layout_height="113dp"
-        android:layout_x="71dp"
-        android:layout_y="385dp"
-        android:text="TextView" />
+    <Button
+        android:id="@+id/buttonplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="230dp"
+        android:layout_y="150dp"
+        android:onClick="butEingabe"
+        android:tag="+"
+        android:text="+" />
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="20dp"
+        android:layout_y="220dp"
+        android:onClick="butEingabe"
+        android:text="4"
+        android:tag="4" />
 
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="90dp"
+        android:layout_y="220dp"
+        android:onClick="butEingabe"
+        android:text="5"
+        android:tag="5" />
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="160dp"
+        android:layout_y="220dp"
+        android:onClick="butEingabe"
+        android:text="6"
+        android:tag="6" />
+    <Button
+        android:id="@+id/buttonminus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="230dp"
+        android:layout_y="220dp"
+        android:onClick="butEingabe"
+        android:text="-"
+        android:tag="-" />
+    <Button
+        android:id="@+id/button7"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="20dp"
+        android:layout_y="290dp"
+        android:onClick="butEingabe"
+        android:text="7"
+        android:tag="7" />
+    <Button
+        android:id="@+id/button8"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="90dp"
+        android:layout_y="290dp"
+        android:onClick="butEingabe"
+        android:text="8"
+        android:tag="8" />
+    <Button
+        android:id="@+id/button9"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="160dp"
+        android:layout_y="290dp"
+        android:onClick="butEingabe"
+        android:text="9"
+        android:tag="9" />
+    <Button
+        android:id="@+id/buttonmal"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="230dp"
+        android:layout_y="290dp"
+        android:onClick="butEingabe"
+        android:text="*"
+        android:tag="*" />
 
+    <Button
+        android:id="@+id/buttondurch"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="230dp"
+        android:layout_y="360dp"
+        android:onClick="butEingabe"
+        android:text="/"
+        android:tag="/" />
+    <Button
+        android:id="@+id/buttongleich"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="230dp"
+        android:layout_y="360dp"
+        android:onClick="auswertung"
+        android:text="="
+        android:tag="=" />
 </AbsoluteLayout>
